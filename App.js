@@ -17,11 +17,11 @@ import {
 export default () => {
 
   btnPiscina = ()=>{
-    fetch('http://192.168.1.8/set-state-piscina');
+    fetch('http://192.168.1.66/set-state-piscina');
   }
 
   btnInitTimer = () => {
-    fetch('http://192.168.1.8/set-timer-start', {
+    fetch('http://192.168.1.66/set-timer-start', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -34,7 +34,7 @@ export default () => {
   }
 
   btnFimTimer = () => {
-    fetch('http://192.168.1.8/set-timer-limmited', {
+    fetch('http://192.168.1.66/set-timer-limmited', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
